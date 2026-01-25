@@ -2,7 +2,7 @@
 title: Building a Zero-Effort Obsidian to Portfolio Workflow
 date: 2026-01-25
 updated: 2026-01-25
-image: https://your-r2-public-url.dev/blog-hero.png
+image: '""'
 tags:
   - automation
   - obsidian
