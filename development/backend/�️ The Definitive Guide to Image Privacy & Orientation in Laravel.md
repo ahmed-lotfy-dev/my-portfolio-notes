@@ -5,9 +5,11 @@ updated: 2026-01-25
 tags:
   - development
   - backend
-  - uploading-images
+  - image-upload
   - laravel
   - "#php"
+  - aws-s3
+  - cloudflare-r2
   - php
 share: true
 ---
