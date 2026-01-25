@@ -1,22 +1,12 @@
 ---
 title: Remote Database Postgres DB
 date: 2026-01-22
+updated: 2026-01-25
 tags:
   - development
   - backend
   - databases
-  - nodejs
-  - postgresql
-  - remote
-  - production
-  - drizzle
-  - prisma
-  - cli
-  - database
-  - connection
-  - obsidian
-  - devops
-  - linux
+  - 1
 share: true
 ---
 ## 1. Context
