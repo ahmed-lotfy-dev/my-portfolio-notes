@@ -8,7 +8,8 @@ tags:
   - databases
 share: true
 ---
-**Version:** Postgres **17.7 (Server)** | Postgres **18.1 (Local Client)**  
+
+![Pasted image 20260125195930](https://pub-49b2468145c64b14a4a172c257cf46b8.r2.dev/2026/01/Pasted%20image%2020260125195930.png)**Version:** Postgres **17.7 (Server)** | Postgres **18.1 (Local Client)**  
 **Status:** ✅ SSL Enabled | ✅ WAL Logical Enabled | ✅ Multi-Tenant Ready
 
 This guide documents the **complete setup and operation** of a production-ready, multi-tenant PostgreSQL instance hosted on **Oracle Cloud (OCI)**, deployed via **Dokploy**, and secured with **SSL**.
