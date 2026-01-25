@@ -6,10 +6,13 @@ tags:
   - development
   - backend
   - uploading-images
+  - laravel
+  - "#php"
+  - php
 share: true
 ---
 ## 🧭 The "Why": Beyond Just Pixels
-
+	
 As senior developers, we often focus on performance and storage, but **privacy is a critical security layer**. When a user (especially an artist) uploads a photo from their smartphone, they aren't just uploading an image. They are uploading a treasure trove of metadata known as **EXIF data**.
 
 This metadata often includes:

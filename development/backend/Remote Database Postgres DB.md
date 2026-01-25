@@ -6,7 +6,6 @@ tags:
   - development
   - backend
   - databases
-  - 1
 share: true
 ---
 ## 1. Context
