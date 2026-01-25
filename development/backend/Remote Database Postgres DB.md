@@ -6,8 +6,9 @@ tags:
   - development
   - backend
   - databases
-share: true
 image: https://pub-49b2468145c64b14a4a172c257cf46b8.r2.dev/2026/01/Pasted%20image%2020260125195930.png
+share: true
+featured: false
 ---
 ## 1. Context
 
