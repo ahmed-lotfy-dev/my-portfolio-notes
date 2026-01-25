@@ -12,7 +12,9 @@ tags:
 share: true
 featured: true
 ---
-![Pasted image 20260125225902](https://pub-49b2468145c64b14a4a172c257cf46b8.r2.dev/2026/01/Pasted%20image%2020260125225902.png)
+
+![unnamed](https://pub-49b2468145c64b14a4a172c257cf46b8.r2.dev/2026/01/unnamed.jpg)
+
 # Building a Zero-Effort Obsidian to Portfolio Workflow
 
 Turning local notes into a professional portfolio blog sounds simple in theory, but making it **truly automated** and **production-ready** at scale requires some serious architectural thought.
