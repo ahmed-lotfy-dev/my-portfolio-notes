@@ -1,18 +1,11 @@
 ---
 title: 🎨 UI UX Pro Max Skill - Linux Setup Guide
 date: 2026-01-25
+updated: 2026-01-25
 tags:
   - development
   - tools
   - ai
-  - productivity
-  - design
-  - linux
-  - uiux
-  - antigravity
-  - backend
-  - frontend
-  - project
 share: true
 ---
 This guide covers the installation and integration of the **UI/UX Pro Max** skill for Linux environments, specifically optimized for **Antigravity**.
