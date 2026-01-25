@@ -8,6 +8,7 @@ tags:
   - ai
 share: true
 featured: true
+image: https://pub-49b2468145c64b14a4a172c257cf46b8.r2.dev/2026/01/Pasted%20image%2020260125225902.png
 ---
 ![Pasted image 20260125225902](https://pub-49b2468145c64b14a4a172c257cf46b8.r2.dev/2026/01/Pasted%20image%2020260125225902.png)
 
