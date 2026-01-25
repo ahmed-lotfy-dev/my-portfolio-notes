@@ -1,6 +1,7 @@
 ---
 title: after install archlinux
 date: 2026-01-25
+updated: 2026-01-25
 tags:
   - linux-guides
   - after-install-archlinux
