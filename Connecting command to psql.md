@@ -1,6 +1,7 @@
 ---
 title: 🎯 The Definitive Guide to Image Privacy & Orientation in Laravel
 date: 2026-01-24
+updated: 2026-01-25
 tags:
   - development
   - backend
