@@ -1,23 +1,11 @@
 ---
 title: Master PostgreSQL Self-Hosting Guide (Dokploy+VPS)
 date: 2026-01-23
+updated: 2026-01-25
 tags:
   - development
   - backend
   - databases
-  - postgres
-  - dokploy
-  - oci
-  - selfhosting
-  - devops
-  - multitenant
-  - database
-  - vps
-  - ssl
-  - cloudflare
-  - postgresql
-  - linux
-  - project
 share: true
 ---
 **Version:** Postgres **17.7 (Server)** | Postgres **18.1 (Local Client)**  
