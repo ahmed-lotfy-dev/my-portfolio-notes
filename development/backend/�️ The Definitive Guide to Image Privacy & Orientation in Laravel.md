@@ -12,7 +12,9 @@ tags:
   - cloudflare-r2
   - php
 share: true
+image: https://pub-49b2468145c64b14a4a172c257cf46b8.r2.dev/2026/01/laravel-image-upload.jpg
 ---
+![laravel image upload](https://pub-49b2468145c64b14a4a172c257cf46b8.r2.dev/2026/01/laravel-image-upload.jpg)
 ## 🧭 The "Why": Beyond Just Pixels
 	
 As senior developers, we often focus on performance and storage, but **privacy is a critical security layer**. When a user (especially an artist) uploads a photo from their smartphone, they aren't just uploading an image. They are uploading a treasure trove of metadata known as **EXIF data**.
