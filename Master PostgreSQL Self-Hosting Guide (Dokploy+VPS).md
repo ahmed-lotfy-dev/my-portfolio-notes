@@ -9,6 +9,7 @@ tags:
 share: true
 featured: true
 ---
+![[1769397305807~2.png|1769397305807~2.png]]
 **Version:** Postgres **17.7 (Server)** | Postgres **18.1 (Local Client)**  
 **Status:** ✅ SSL Enabled | ✅ WAL Logical Enabled | ✅ Multi-Tenant Ready
 
