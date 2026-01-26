@@ -46,7 +46,7 @@ To expose PostgreSQL safely over a custom domain, **Cloudflare proxy must be dis
     
 - **Name:** `pg`
     
-- **IPv4:** `193.123.91.169`
+- **IPv4:** `VPS_INSTANCE_IP 192.168.12.65`
     
 - **Proxy Status:** ☁️ **DNS Only (Grey Cloud)**
     
@@ -95,9 +95,9 @@ services:
     image: ghcr.io/railwayapp-templates/postgres-ssl:17
     restart: always
     environment:
-      POSTGRES_USER: ${POSTGRES_USER:-my-pg-user}
-      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-my-pg-password}
-      POSTGRES_DB: ${POSTGRES_DB:-my-pg-db}
+      POSTGRES_USER: ${POSTGRES_USER:-example-db-user}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-example-dbpassword}
+      POSTGRES_DB: ${POSTGRES_DB:-example-db}
     command:
       - "postgres"
       - "-c"
@@ -128,7 +128,7 @@ volumes:
 ### Connect from Local Machine
 
 ```bash
-psql postgresql://my-pg-user:my-pg-password@pg.ahmedlotfy.site:5432/my-pg-db
+psql postgresql://my-pg-user:my-pg-password@VPS_IP_OR_192.168.23.45:5432/my-pg-db
 ```
 
 Expected:
@@ -162,9 +162,9 @@ Run while connected as the **main Postgres admin user**.
 ### Example Projects Created
 
 ```sql
-CREATE USER database_user WITH PASSWORD 'secure_password';
+CREATE USER example_user WITH PASSWORD 'secure_password';
 CREATE DATABASE example_db OWNER example_user;
-GRANT ALL PRIVILEGES ON DATABASE example_db TO myportfolio_user;
+GRANT ALL PRIVILEGES ON DATABASE example_db TO example_user;
 ```
 
 > 🔐 **Best Practice**  
