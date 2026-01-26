@@ -6,12 +6,13 @@ tags:
   - development
   - backend
   - databases
-image: https://pub-49b2468145c64b14a4a172c257cf46b8.r2.dev/2026/01/Pasted%20image%2020260125195930.png
+image: https://pub-49b2468145c64b14a4a172c257cf46b8.r2.dev/2026/01/1769397305807~2.png
 share: true
 featured: true
 ---
+![1769397305807~2](https://pub-49b2468145c64b14a4a172c257cf46b8.r2.dev/2026/01/1769397305807~2.png)
 
-![Pasted image 20260125195930](https://pub-49b2468145c64b14a4a172c257cf46b8.r2.dev/2026/01/Pasted%20image%2020260125195930.png)**Version:** Postgres **17.7 (Server)** | Postgres **18.1 (Local Client)**  
+**Version:** Postgres **17.7 (Server)** | Postgres **18.1 (Local Client)**  
 **Status:** ✅ SSL Enabled | ✅ WAL Logical Enabled | ✅ Multi-Tenant Ready
 
 This guide documents the **complete setup and operation** of a production-ready, multi-tenant PostgreSQL instance hosted on **Oracle Cloud (OCI)**, deployed via **Dokploy**, and secured with **SSL**.
@@ -161,13 +162,9 @@ Run while connected as the **main Postgres admin user**.
 ### Example Projects Created
 
 ```sql
-CREATE USER selftracker_user WITH PASSWORD 'secure_password';
-CREATE DATABASE selftracker_db OWNER selftracker_user;
-GRANT ALL PRIVILEGES ON DATABASE selftracker_db TO selftracker_user;
-
-CREATE USER myportfolio_user WITH PASSWORD 'secure_password';
-CREATE DATABASE myportfolio_db OWNER myportfolio_user;
-GRANT ALL PRIVILEGES ON DATABASE myportfolio_db TO myportfolio_user;
+CREATE USER database_user WITH PASSWORD 'secure_password';
+CREATE DATABASE example_db OWNER example_user;
+GRANT ALL PRIVILEGES ON DATABASE example_db TO myportfolio_user;
 ```
 
 > 🔐 **Best Practice**  
@@ -192,7 +189,7 @@ GRANT ALL PRIVILEGES ON DATABASE myportfolio_db TO myportfolio_user;
 ### Step 2: Grant Schema Access
 
 ```sql
-GRANT USAGE ON SCHEMA public TO zamalek_store_user;
+GRANT USAGE ON SCHEMA public TO example_user;
 ```
 
 ---
@@ -200,8 +197,8 @@ GRANT USAGE ON SCHEMA public TO zamalek_store_user;
 ### Step 3: Grant Table & Sequence Permissions
 
 ```sql
-GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO zamalek_store_user;
-GRANT ALL PRIVILEGES ON ALL SEQUENCES IN SCHEMA public TO zamalek_store_user;
+GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO example_user;
+GRANT ALL PRIVILEGES ON ALL SEQUENCES IN SCHEMA public TO example_user;
 ```
 
 ---
@@ -210,10 +207,10 @@ GRANT ALL PRIVILEGES ON ALL SEQUENCES IN SCHEMA public TO zamalek_store_user;
 
 ```sql
 ALTER DEFAULT PRIVILEGES IN SCHEMA public
-GRANT ALL ON TABLES TO zamalek_store_user;
+GRANT ALL ON TABLES TO example_user;
 
 ALTER DEFAULT PRIVILEGES IN SCHEMA public
-GRANT ALL ON SEQUENCES TO zamalek_store_user;
+GRANT ALL ON SEQUENCES TO example_user;
 ```
 
 ✅ This ensures **new tables created by Prisma automatically work**.
@@ -236,7 +233,7 @@ Safest way to migrate across Postgres versions:
 
 ```bash
 docker run --rm -i postgres:17-alpine psql \
-"postgresql://user:PASSWORD@pg.ahmedlotfy.site:5432/db_name?sslmode=require" \
+"postgresql://user:PASSWORD@vps-ip-or-domain:5432/db_name?sslmode=require" \
 < your_local_dump.sql
 ```
 
