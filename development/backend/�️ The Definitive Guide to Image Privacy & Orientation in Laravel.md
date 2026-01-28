@@ -11,6 +11,7 @@ tags:
   - aws-s3
   - cloudflare-r2
   - security
+  - php
 image: https://pub-49b2468145c64b14a4a172c257cf46b8.r2.dev/2026/01/laravel-image-upload.jpg
 share: true
 featured: true
