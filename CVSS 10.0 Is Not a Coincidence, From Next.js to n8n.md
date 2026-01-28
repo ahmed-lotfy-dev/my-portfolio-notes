@@ -11,7 +11,6 @@ tags:
   - n8n
   - backend
   - devops
-category: Security
 share: true
 featured: true
 ---
